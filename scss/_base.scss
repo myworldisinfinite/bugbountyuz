@@ -1,0 +1,195 @@
+@import './colors';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-dark;
+    color: $text-light;
+}
+
+body * {
+    font-family: "Gilroy", sans-serif;
+}
+
+body *::selection {
+    background-color: #0071DA;
+    color: #fff;
+}
+
+/* Customize scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+    height: auto;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0071DA;
+}
+
+body::-webkit-scrollbar-track {
+    background: #101213;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// #Container 
+$lg-container: 0 120px;
+$md-container: 0 60px;
+$sm-container: 0 20px;
+@media only screen and (max-width: 5464px) {
+    .container {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: $lg-container;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .container {
+        max-width: initial;
+        margin: initial;
+        max-width: auto;
+        padding: $lg-container;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: $md-container;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        padding: $sm-container;
+    }
+}
+
+/* #Button-Sizes */
+
+// Large
+$lg-btnlight-width: 200px;
+$lg-btnlight-height: 60px;
+
+$lg-btnprimary-width: 220px;
+$lg-btnprimary-height: 60px;
+
+// Medium
+$md-btnlight-width: 180px;
+$md-btnlight-height: 50px;
+
+$md-btnprimary-width: 200px;
+$md-btnprimary-height: 55px;
+
+// Small
+$sm-btnlight-width: 200px;
+$sm-btnlight-height: 60px;
+
+$sm-btnprimary-width: 200px;
+$sm-btnprimary-height: 55px;
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: $text-light;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-light {
+    width: $lg-btnlight-width;
+    height: $lg-btnlight-height;
+    background-color: transparent;
+
+    border: 2px solid #FFFFFF;
+}
+
+.btn-primary {
+    width: $lg-btnprimary-width;
+    height: $lg-btnprimary-height;
+    background-color: $primary-color;
+}
+
+@media only screen and (max-width: 1024px) {
+    .btn-light {
+        width: $md-btnlight-width;
+        height: $md-btnlight-height;
+    }
+    .btn-primary {
+        width: $md-btnprimary-width;
+        height: $md-btnprimary-height;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .btn-light {
+        width: $sm-btnlight-width;
+        height: $sm-btnlight-height;
+    }
+    .btn-primary {
+        width: $sm-btnprimary-width;
+        height: $sm-btnprimary-height;
+    }
+}
+
+// base section margin styles
+$lg-section-margin: 120px;
+$md-section-margin: 80px;
+$sm-section-margin: 60px;
+
+section {
+    padding-top: $lg-section-margin;
+}
+
+@media only screen and (max-width: 1024px) {
+    section {
+        padding-top: $md-section-margin;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section {
+        padding-top: $sm-section-margin;
+    }
+}
+
+// Sections header styles
+
+section h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    section h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:$text-light;
+}

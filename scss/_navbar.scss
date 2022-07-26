@@ -1,0 +1,45 @@
+nav.navbar {
+    .container {
+        height: 180px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: space-between;
+
+        ul.nav-list {
+            display: flex;
+
+            li {
+            
+                &:not(:first-child) {
+                    margin-left: 40px;
+                }
+            
+                a {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav.navbar {
+        .container {
+            height: 120px;
+
+            ul.nav-list {
+        
+                li {
+                    
+                    a {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+}
