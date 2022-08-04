@@ -153,6 +153,11 @@ nav.navbar .container {
 
   nav.navbar .container ul.nav-list li:not(:first-child) {
     margin-left: 10px; } }
+@media only screen and (max-width: 750px) {
+  nav.navbar .container ul.nav-list {
+    display: none; }
+  nav.navbar .container button.btn-light {
+    display: none; } }
 @media only screen and (max-width: 425px) {
   nav.navbar .container ul.nav-list {
     display: none; }

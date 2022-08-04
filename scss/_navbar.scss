@@ -79,7 +79,16 @@ nav.navbar {
 }
 
 @media only screen and (max-width: 750px) {
-    
+    nav.navbar {
+        .container {
+            ul.nav-list {
+                display: none;
+            }
+            button.btn-light {
+                display: none;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 425px) {
