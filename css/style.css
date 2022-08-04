@@ -145,11 +145,14 @@ nav.navbar .container {
 @media only screen and (max-width: 950px) {
   nav.navbar .container ul.nav-list li:not(:first-child) {
     margin-left: 20px; } }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 850px) {
   nav.navbar .container .btn-light {
     width: 160px;
     height: 50px;
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  nav.navbar .container ul.nav-list li:not(:first-child) {
+    margin-left: 10px; } }
 @media only screen and (max-width: 425px) {
   nav.navbar .container ul.nav-list {
     display: none; }
