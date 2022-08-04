@@ -25,6 +25,17 @@ nav.navbar {
     }
 }
 
+// costumize responsibility
+@media only screen and (max-width: 1170px) {
+    nav.navbar .container ul.nav-list li a {
+        font-size: 18px;
+    }
+    nav.navbar .container ul.nav-list li:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+// default responsibility
 @media only screen and (max-width: 1024px) {
     nav.navbar {
         .container {
@@ -42,4 +53,34 @@ nav.navbar {
             }
         }
     }
+}
+
+// costumize responsibility
+@media only screen and (max-width: 950px) {
+    nav.navbar .container ul.nav-list li:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    nav.navbar {
+        .container {
+            ul.nav-list {
+                display: none;
+            }
+            
+            .nav-logo {
+                img {
+                    width: 86px;
+                    height: 34px;
+                }
+            }
+
+            button.btn-light {
+                display: none;
+            }
+        }
+    }    
 }
