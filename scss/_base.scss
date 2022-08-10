@@ -7,6 +7,16 @@
 }
 
 body {
+    display: grid;
+    grid-template-areas: 
+               "header header header" 
+               "about about about"
+               "features features features"
+               "whyus whyus whyus"
+               "footer footer footer";
+}
+
+body {
     background-color: $bg-dark;
     color: $text-light;
 }

@@ -1,4 +1,6 @@
 section#about {
+    grid-area: about;
+    
     .container {
         padding-top: 80px;
         display: flex;

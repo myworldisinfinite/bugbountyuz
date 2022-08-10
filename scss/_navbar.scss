@@ -1,4 +1,6 @@
 nav.navbar {
+    grid-area: navbar;
+    
     .container {
         height: 180px;
         display: grid;
