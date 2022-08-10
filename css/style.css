@@ -202,7 +202,7 @@ main {
       font-size: 20px;
       line-height: 35px;
       max-width: 80%; } }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   main {
     min-height: 647px; }
     main h1 {
@@ -234,14 +234,25 @@ section#about .container {
   section#about .container {
     padding-top: 50px; }
     section#about .container .section-image img {
-      width: 430px;
-      height: 413.46px; }
+      max-width: 430px;
+      min-height: 413.46px; }
     section#about .container .section-text p {
       max-width: 405px;
       font-size: 16px;
       line-height: 30px; }
       section#about .container .section-text p:last-child {
         margin-top: 50px; } }
+@media only screen and (max-width: 425px) {
+  section#about .container {
+    flex-direction: column; }
+    section#about .container .section-image img {
+      max-width: 300px;
+      min-height: 300px; }
+    section#about .container .section-text p {
+      font-size: 12px;
+      line-height: 25px; }
+      section#about .container .section-text p:last-child {
+        margin-top: 40px; } }
 section#features .wrapper {
   padding-top: 60px;
   display: grid;

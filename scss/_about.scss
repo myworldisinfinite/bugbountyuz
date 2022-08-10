@@ -32,8 +32,8 @@ section#about {
             padding-top: 50px;
 
             .section-image img {
-                width: 430px;
-                height: 413.46px;
+                max-width: 430px;
+                min-height: 413.46px;
             }
             .section-text {
                 p {
@@ -43,6 +43,28 @@ section#about {
 
                     &:last-child {
                         margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    section#about {
+        .container {
+            flex-direction: column;
+            
+            .section-image img {
+                max-width: 300px;
+                min-height: 300px;
+            }
+            .section-text {
+                p {
+                    font-size: 12px;
+                    line-height: 25px;
+
+                    &:last-child {
+                        margin-top: 40px;
                     }
                 }
             }
