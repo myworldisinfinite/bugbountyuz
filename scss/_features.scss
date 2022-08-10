@@ -19,8 +19,8 @@ section#features {
                 }
 
                 img {
-                    width: 60px;
-                    height: 60px;
+                    max-width: 60px;
+                    min-height: 60px;
                 }
 
                 h4 {
@@ -70,4 +70,38 @@ section#features {
             }
         }
     }
+}
+@media only screen and (max-width: 425px) {
+    section#features {
+
+        .wrapper {
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto;
+            grid-row-gap: 40px;
+            
+            .row {
+                .col {
+                    img {
+                        max-width: 35px;
+                        min-height: 35px;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        line-height: 160%;
+                        margin-top: 10px;
+                        max-width: 70%;
+                    }
+                    
+                    &:nth-child(even) {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }    
 }

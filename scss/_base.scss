@@ -61,7 +61,7 @@ $sm-container: 0 20px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
     .container {
         padding: $sm-container;
     }
@@ -128,7 +128,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
     .btn-light {
         width: $sm-btnlight-width;
         height: $sm-btnlight-height;
@@ -154,7 +154,7 @@ section {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
     section {
         padding-top: $sm-section-margin;
     }
@@ -177,7 +177,7 @@ section h2 {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
     section h2 {
         font-weight: 700;
         font-size: 24px;
