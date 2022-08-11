@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+// Grid Body 
 body {
     display: grid;
     grid-template-areas: 
@@ -16,11 +17,13 @@ body {
                "footer footer footer";
 }
 
+// Body to paint
 body {
     background-color: $bg-dark;
     color: $text-light;
 }
 
+// Body font
 body * {
     font-family: "Gilroy", sans-serif;
 }
@@ -111,6 +114,8 @@ button {
     outline: none;
     border: none;
     border-radius: 3px;
+    transition: ease-in-out 0.4s;
+
 }
 
 .btn-light {
@@ -119,12 +124,22 @@ button {
     background-color: transparent;
 
     border: 2px solid #FFFFFF;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+    
 }
 
 .btn-primary {
     width: $lg-btnprimary-width;
     height: $lg-btnprimary-height;
     background-color: $primary-color;
+
+    &:hover {
+        background-color: #00529D;
+    }
 }
 
 @media only screen and (max-width: 1024px) {

@@ -58,18 +58,24 @@ button {
   color: #fff;
   outline: none;
   border: none;
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: ease-in-out 0.4s; }
 
 .btn-light {
   width: 200px;
   height: 60px;
   background-color: transparent;
   border: 2px solid #FFFFFF; }
+  .btn-light:hover {
+    background-color: #fff;
+    color: #000; }
 
 .btn-primary {
   width: 220px;
   height: 60px;
   background-color: #0071DA; }
+  .btn-primary:hover {
+    background-color: #00529D; }
 
 @media only screen and (max-width: 1024px) {
   .btn-light {
@@ -120,7 +126,8 @@ a {
   color: #fff; }
 
 header {
-  grid-area: header; }
+  grid-area: header;
+  grid-template-areas: "navbar navbar navbar" "main main main"; }
 
 nav.navbar {
   grid-area: navbar; }
@@ -137,7 +144,14 @@ nav.navbar {
       nav.navbar .container ul.nav-list li a {
         font-weight: 500;
         font-size: 20px;
-        line-height: 24px; }
+        line-height: 24px;
+        transition: ease-in-out 0.2s;
+        padding-bottom: 7px; }
+        nav.navbar .container ul.nav-list li a:hover {
+          color: #0071DA;
+          border-bottom: 2px solid;
+          border-image-slice: 9;
+          border-image: linear-gradient(270deg, rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1; }
 
 @media only screen and (max-width: 1170px) {
   nav.navbar .container ul.nav-list li a {

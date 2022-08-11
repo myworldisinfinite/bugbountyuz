@@ -1,3 +1,7 @@
 header {
     grid-area: header;
+
+    grid-template-areas: 
+        "navbar navbar navbar"
+        "main main main";
 }

@@ -21,6 +21,17 @@ nav.navbar {
                     font-weight: 500;
                     font-size: 20px;
                     line-height: 24px;
+                    transition: ease-in-out 0.2s;
+                    padding-bottom: 7px;
+
+
+                    &:hover {
+                        color: $primary-color;
+                        border-bottom: 2px solid;
+                        border-image-slice: 9;   
+                        border-image: linear-gradient(270deg,rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1;
+                        // border-image: linear-gradient(rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417), #0071DA);
+                    }
                 }
             }
         }
