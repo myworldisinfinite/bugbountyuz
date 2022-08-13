@@ -103,6 +103,7 @@ $sm-btnlight-height: 60px;
 $sm-btnprimary-width: 200px;
 $sm-btnprimary-height: 55px;
 
+/* #Button default styles */
 button {
     display: flex;
     align-items: center;
@@ -118,6 +119,7 @@ button {
 
 }
 
+// #Button Colors
 .btn-light {
     width: $lg-btnlight-width;
     height: $lg-btnlight-height;
@@ -209,6 +211,7 @@ section h2 {
         line-height: 30px;
     }
 }
+
 
 ul {
     list-style-type: none;
