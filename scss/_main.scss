@@ -1,63 +1,10 @@
+@import './intro';
+@import './about';
+@import './features';
+@import './whyus';
+@import './contact';
+@import './team/team';
+
 main {
     grid-area: main;
-    background-image: url('../images/main-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    h1 {
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 99px;
-        margin-bottom: 30px;
-    }
-
-    p {
-        margin-bottom: 40px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 38px;
-        max-width: 858px;
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    main {
-        min-height: 448px;
-
-        h1 {
-            font-weight: 700;
-            font-size: 64px;
-            line-height: 99px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 35px;
-            max-width: 80%;
-        }
-    }
-}
-@media only screen and (max-width: 425px) {
-    main {
-        min-height: 647px;
-
-        h1 {
-            font-size: 48px;
-            line-height: 59px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 20px;
-            margin-bottom: 60px;
-        }
-    }
 }

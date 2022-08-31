@@ -1,0 +1,104 @@
+section#team-info {
+    .team-group {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 64px;
+
+        .col {
+            width: calc(100% / 3 - 30px);
+
+            .header-image {
+                img {
+                    max-width: 100%;
+                    background-color: #D9D9D9;
+                    border-radius: 10px;
+                }
+
+                margin-bottom: 30px;
+            }
+
+            .header-content {
+                h3 {
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: $text-light;
+                }
+
+                span.role {
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 29px;
+    
+                        /* Main color */
+    
+                        color: $primary-color;
+    
+                        display: block;
+                        margin-bottom: 20px;
+
+                }
+            }
+
+            ul.socials {
+                display: flex;
+                column-gap: 25px;
+
+                a {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// For mobile devices
+@media only screen and (max-width: 500px) {
+    section#team-info {
+        .team-group {
+            margin-top: 30px;
+            column-gap: 0;
+            row-gap: 40px;
+
+            .col {
+                width: 100%; //calc(100% / 3 - 30px)
+    
+                .header-image {
+                    img {
+                        max-width: 100%;
+                        background-color: #D9D9D9;
+                        border-radius: 10px;
+                    }
+    
+                    margin-bottom: 30px;
+                }
+    
+                .header-content {
+                    h3 {
+                        margin-bottom: 10px;
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: $text-light;
+                    }
+    
+                    span.role {
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-bottom: 10px;
+                    }
+                }
+    
+                ul.socials {
+                    display: flex;
+                    column-gap: 20px;
+                }
+            }
+        }
+    }
+}

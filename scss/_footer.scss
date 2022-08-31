@@ -1,7 +1,6 @@
-section#footer {
-    grid-area: footer;
+footer {
+        grid-area: footer;
 
-    footer {
         border-top: 2px solid #FFFFFF;
         padding: 80px;
         display: flex;
@@ -46,13 +45,14 @@ section#footer {
             line-height: 29px;
             color: #757575;
         }
-    }   
+      
 
 }
 
 @media only screen and (max-width: 425px) {
-    section#footer footer {
+     footer {
         padding: 60px 50px;
+
         ul.footer-links {
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
@@ -89,5 +89,17 @@ section#footer {
             font-size: 16px;
             line-height: 19px;   
         }
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    footer {
+        padding: 60px 20px;
+    }
+
+    footer ul.footer-links li a {
+        font-size: 18px;
+        line-height: 29px;
     }
 }

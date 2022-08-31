@@ -1,0 +1,35 @@
+section#team-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin-top: 60px;
+    }
+    p {
+        margin-top: 60px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        color: $text-light;
+        max-width: 80%;
+        text-align: center;
+
+        b {
+            font-weight: 500;
+            color: $primary-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    section#team-intro {
+        img {
+            width: 300px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}

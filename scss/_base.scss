@@ -11,9 +11,7 @@ body {
     display: grid;
     grid-template-areas: 
                "header header header" 
-               "about about about"
-               "features features features"
-               "whyus whyus whyus"
+               "main main main"
                "footer footer footer";
 }
 
@@ -171,19 +169,19 @@ $lg-section-margin: 120px;
 $md-section-margin: 80px;
 $sm-section-margin: 60px;
 
-section {
-    padding-top: $lg-section-margin;
+section:not(:first-child) , footer{
+    margin-top: $lg-section-margin;
 }
 
 @media only screen and (max-width: 1024px) {
-    section {
-        padding-top: $md-section-margin;
+    section:not(:first-child), footer {
+        margin-top: $md-section-margin;
     }
 }
 
 @media only screen and (max-width: 425px) {
-    section {
-        padding-top: $sm-section-margin;
+    section:not(:first-child):not(:first-child), footer {
+        margin-top: $sm-section-margin;
     }
 }
 
@@ -194,6 +192,7 @@ section h2 {
     font-size: 48px;
     line-height: 59px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1024px) {

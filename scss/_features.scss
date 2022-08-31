@@ -1,6 +1,4 @@
 section#features {
-    grid-area: features;
-
     .wrapper {
         padding-top: 60px;
         display: grid;
@@ -53,8 +51,8 @@ section#features {
                 .col {
                         
                     img {
-                        width: 50px;
-                        height: 50px;
+                        max-width: 50px;
+                        min-height: 50px;
                     }
     
                     h4 {

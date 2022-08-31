@@ -1,13 +1,23 @@
-section#about {
-    grid-area: about;
-    
+section#about {    
     .container {
         padding-top: 80px;
-        display: flex;
+        display: grid;
+        grid-template-areas: "image text";
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        
+        .section-image {
+            grid-area: image;
 
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        
         .section-text {
+            grid-area: text;
+
             p {
                 max-width: 667px;
                 font-weight: 500;
@@ -26,16 +36,18 @@ section#about {
         .container {
             padding-top: 50px;
 
-            .section-image img {
-                max-width: 430px;
-                min-height: 413.46px;
+            .section-image {
+
+                img {
+                    max-width: 430px;
+                    min-height: 413.46px;
+                }
             }
             .section-text {
                 p {
-                    max-width: 405px;
                     font-size: 16px;
                     line-height: 30px;
-                    width: 80%;
+                    max-width: 80%;
                     margin: 0 auto;
 
                     &:last-child {
@@ -46,10 +58,23 @@ section#about {
         }
     }
 }
+@media only screen and (max-width: 768px) {
+    section#about {
+        .container {
+            
+            .section-image img {
+                max-width: 300px;
+                min-height: 300px;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 425px) {
     section#about {
         .container {
-            flex-direction: column;
+            grid-template-areas: "Image"
+                                 "Text";
+                                 
             
             .section-image img {
                 max-width: 300px;
