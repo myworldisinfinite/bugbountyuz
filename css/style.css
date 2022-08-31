@@ -168,7 +168,7 @@ header {
 @media only screen and (max-width: 1200px) {
   header div.header-group nav.header-menu ul.nav-list li.nav-li:not(:last-child) {
     margin-right: 20px; } }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   header {
     height: 120px; }
     header div.header-group nav.header-menu ul.nav-list li.nav-li a.nav-link {
