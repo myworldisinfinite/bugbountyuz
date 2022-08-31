@@ -1,1 +1,1 @@
-So this project created with Colin Morgan
+So this project created with Colin Morgan 🚀
