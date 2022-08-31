@@ -57,6 +57,37 @@ section#team-info {
     }
 }
 
+// For Tablets
+@media only screen and (max-width: 1024px) {
+    section#team-info {
+        .team-group {
+            .col {
+                width: calc(100% / 3 - 20px);
+
+                .header-image {
+                    img {
+                        
+                    }
+                }
+                .header-content {
+                    h3, span.role {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+
+                    ul.socials {
+                        column-gap: 10px;
+
+                        img {
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // For mobile devices
 @media only screen and (max-width: 500px) {

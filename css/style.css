@@ -511,6 +511,9 @@ section#team-intro {
       font-weight: 500;
       color: #0071DA; }
 
+@media only screen and (max-width: 1024px) {
+  section#team-intro img {
+    width: 530px; } }
 @media only screen and (max-width: 500px) {
   section#team-intro img {
     width: 300px; }
@@ -551,6 +554,17 @@ section#team-info .team-group {
         width: 30px;
         height: 30px; }
 
+@media only screen and (max-width: 1024px) {
+  section#team-info .team-group .col {
+    width: calc(100% / 3 - 20px); }
+    section#team-info .team-group .col .header-content h3, section#team-info .team-group .col .header-content span.role {
+      font-size: 18px;
+      line-height: 22px; }
+    section#team-info .team-group .col .header-content ul.socials {
+      column-gap: 10px; }
+      section#team-info .team-group .col .header-content ul.socials img {
+        width: 12px;
+        height: 12px; } }
 @media only screen and (max-width: 500px) {
   section#team-info .team-group {
     margin-top: 30px;
@@ -634,7 +648,7 @@ footer {
     footer p {
       font-size: 16px;
       line-height: 19px; } }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
   footer {
     padding: 60px 20px; }
 

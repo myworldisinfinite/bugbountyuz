@@ -22,6 +22,14 @@ section#team-intro {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    section#team-intro {
+        img {
+            width: 530px;
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     section#team-intro {
         img {
