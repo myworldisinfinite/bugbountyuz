@@ -291,7 +291,7 @@ section#about .container {
     min-height: 300px; } }
 @media only screen and (max-width: 425px) {
   section#about .container {
-    grid-template-areas: "Image" "Text"; }
+    grid-template-areas: "image" "text"; }
     section#about .container .section-image img {
       max-width: 300px;
       min-height: 300px; }
