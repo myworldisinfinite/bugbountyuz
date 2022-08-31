@@ -90,7 +90,7 @@ section#team-info {
 }
 
 // For mobile devices
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     section#team-info {
         .team-group {
             margin-top: 30px;
@@ -123,11 +123,15 @@ section#team-info {
                         line-height: 24px;
                         margin-bottom: 10px;
                     }
-                }
-    
-                ul.socials {
-                    display: flex;
-                    column-gap: 20px;
+
+                    ul.socials {
+                        column-gap: 20px;
+                        
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
                 }
             }
         }

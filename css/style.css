@@ -514,7 +514,7 @@ section#team-intro {
 @media only screen and (max-width: 1024px) {
   section#team-intro img {
     width: 530px; } }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   section#team-intro img {
     width: 300px; }
   section#team-intro p {
@@ -565,7 +565,7 @@ section#team-info .team-group {
       section#team-info .team-group .col .header-content ul.socials img {
         width: 12px;
         height: 12px; } }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   section#team-info .team-group {
     margin-top: 30px;
     column-gap: 0;
@@ -587,9 +587,11 @@ section#team-info .team-group {
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 10px; }
-      section#team-info .team-group .col ul.socials {
-        display: flex;
-        column-gap: 20px; } }
+      section#team-info .team-group .col .header-content ul.socials {
+        column-gap: 20px; }
+        section#team-info .team-group .col .header-content ul.socials img {
+          width: 30px;
+          height: 30px; } }
 main {
   grid-area: main; }
 
@@ -648,7 +650,7 @@ footer {
     footer p {
       font-size: 16px;
       line-height: 19px; } }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   footer {
     padding: 60px 20px; }
 
