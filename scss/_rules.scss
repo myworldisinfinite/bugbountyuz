@@ -1,0 +1,57 @@
+section#rules {
+    .rules-group {
+        margin-top: 60px;
+
+        .row {
+            display: flex;
+            column-gap: 50px;
+            row-gap: 60px;
+            align-items: center;
+            
+            padding: 76px 63px 76px 60px;
+            border: 2px solid #FFFFFF;
+            border-radius: 5px; 
+
+            
+                img {
+                    width: 85px;
+                    height: 85px;   
+                }
+    
+                p {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: 1px;
+                }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 1516px) {
+    section#rules .rules-group .row p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    section#rules {
+        .rules-group {
+            .row {
+                padding: 65px 46px 66px 60px;
+                
+                img {
+                    width: 65px;
+                    height: 65px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 36px;
+                    letter-spacing: normal;
+                }
+            }
+        }
+    }
+}

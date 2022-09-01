@@ -592,6 +592,38 @@ section#team-info .team-group {
         section#team-info .team-group .col .header-content ul.socials img {
           width: 30px;
           height: 30px; } }
+section#rules .rules-group {
+  margin-top: 60px; }
+  section#rules .rules-group .row {
+    display: flex;
+    column-gap: 50px;
+    row-gap: 60px;
+    align-items: center;
+    padding: 76px 63px 76px 60px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px; }
+    section#rules .rules-group .row img {
+      width: 85px;
+      height: 85px; }
+    section#rules .rules-group .row p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 1px; }
+
+@media only screen and (max-width: 1516px) {
+  section#rules .rules-group .row p {
+    font-size: 20px; } }
+@media only screen and (max-width: 1100px) {
+  section#rules .rules-group .row {
+    padding: 65px 46px 66px 60px; }
+    section#rules .rules-group .row img {
+      width: 65px;
+      height: 65px; }
+    section#rules .rules-group .row p {
+      font-size: 18px;
+      line-height: 36px;
+      letter-spacing: normal; } }
 main {
   grid-area: main; }
 
