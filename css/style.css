@@ -593,11 +593,13 @@ section#team-info .team-group {
           width: 30px;
           height: 30px; } }
 section#rules .rules-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
   margin-top: 60px; }
   section#rules .rules-group .row {
     display: flex;
     column-gap: 50px;
-    row-gap: 60px;
     align-items: center;
     padding: 76px 63px 76px 60px;
     border: 2px solid #FFFFFF;
@@ -624,6 +626,24 @@ section#rules .rules-group {
       font-size: 18px;
       line-height: 36px;
       letter-spacing: normal; } }
+@media only screen and (max-width: 800px) {
+  section#rules .rules-group .row p {
+    font-size: 16px; } }
+@media only screen and (max-width: 700px) {
+  section#rules .rules-group {
+    margin-top: 60px; }
+    section#rules .rules-group .row {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+      column-gap: 0;
+      padding: 26px 34px 26px 20px; }
+      section#rules .rules-group .row img {
+        width: 40px;
+        height: 40px; }
+      section#rules .rules-group .row p {
+        font-size: 12px;
+        line-height: 22px; } }
 main {
   grid-area: main; }
 
