@@ -39,31 +39,26 @@ header {
                         transition: ease-in-out 0.2s;
                         padding-bottom: 7px;
 
+                        &.active {
+                            color: $primary-color;
+                            border-bottom: 2px solid;
+                            border-image-slice: 9;   
+                            border-image: linear-gradient(270deg,rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1;
+                        }
 
-                    &:hover {
-                        color: $primary-color;
-                        border-bottom: 2px solid;
-                        border-image-slice: 9;   
-                        border-image: linear-gradient(270deg,rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1;
-                        // border-image: linear-gradient(rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417), #0071DA);
-                    }
-                    }
-
-                    a.active {
-                        color: $primary-color;
-                        border-bottom: 2px solid;
-                        border-image-slice: 9;   
-                        border-image: linear-gradient(270deg,rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1;
+                        &:hover {
+                            color: $primary-color;
+                            border-bottom: 2px solid;
+                            border-image-slice: 9;   
+                            border-image: linear-gradient(270deg,rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1;
+                        }
                     }
                 }
             }
         }
-
-        div.header-btn {
-
-        }
     }
 }
+
 
 @media only screen and (max-width: 1200px) {
     header div.header-group nav.header-menu ul.nav-list li.nav-li:not(:last-child) {
@@ -76,11 +71,7 @@ header {
         height: 120px;
     
         div.header-group {
-
-            div.header-logo {
-    
-            }
-            
+        
             nav.header-menu {
                 
     
@@ -96,10 +87,6 @@ header {
                         }
                     }
                 }
-            }
-    
-            div.header-btn {
-                
             }
         }
     }
@@ -153,4 +140,3 @@ header {
     }
 
 }
-// header div.header-group div.header-btn .btn-light {}

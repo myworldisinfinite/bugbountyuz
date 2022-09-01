@@ -154,16 +154,16 @@ header {
         line-height: 24px;
         transition: ease-in-out 0.2s;
         padding-bottom: 7px; }
+        header div.header-group nav.header-menu ul.nav-list li.nav-li a.nav-link.active {
+          color: #0071DA;
+          border-bottom: 2px solid;
+          border-image-slice: 9;
+          border-image: linear-gradient(270deg, rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1; }
         header div.header-group nav.header-menu ul.nav-list li.nav-li a.nav-link:hover {
           color: #0071DA;
           border-bottom: 2px solid;
           border-image-slice: 9;
           border-image: linear-gradient(270deg, rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1; }
-      header div.header-group nav.header-menu ul.nav-list li.nav-li a.active {
-        color: #0071DA;
-        border-bottom: 2px solid;
-        border-image-slice: 9;
-        border-image: linear-gradient(270deg, rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1; }
 
 @media only screen and (max-width: 1200px) {
   header div.header-group nav.header-menu ul.nav-list li.nav-li:not(:last-child) {
