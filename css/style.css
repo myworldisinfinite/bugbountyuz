@@ -493,6 +493,14 @@ section#whyus .brands {
       section#whyus .brands .box img {
         max-width: 90%;
         min-height: 90%; } }
+section#faq .faq-group .row h4 {
+  font-size: 20px;
+  line-height: 25px; }
+section#faq .faq-group .row p {
+  font-size: 20px;
+  line-height: 34px;
+  color: #E5E5E5; }
+
 section#team-intro {
   display: flex;
   flex-direction: column;
