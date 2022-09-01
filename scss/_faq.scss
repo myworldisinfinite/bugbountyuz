@@ -1,16 +1,70 @@
 section#faq {
     .faq-group {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
         .row {
+            padding: 80px;
+            border: 2px solid #FFFFFF;
+            border-radius: 5px;
+
             h4 {
+                font-weight: 700;
                 font-size: 20px;
                 line-height: 25px;
             }
 
             p {
+                margin-top: 50px;
                 font-size: 20px;
                 line-height: 34px;
                 color: $text-gray-darker;
             }
         }
     }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    section#faq {
+        .faq-group {
+    
+            .row {
+                padding: 50px;
+    
+                p {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    section#faq {
+        row-gap: 20px;
+
+        .faq-group {
+    
+            .row {
+                padding: 35px 20px 30px 20px;
+
+                h4 {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+    
+                p {
+                    margin-top: 15px;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    
 }

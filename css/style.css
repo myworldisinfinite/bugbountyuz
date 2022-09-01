@@ -493,14 +493,43 @@ section#whyus .brands {
       section#whyus .brands .box img {
         max-width: 90%;
         min-height: 90%; } }
-section#faq .faq-group .row h4 {
-  font-size: 20px;
-  line-height: 25px; }
-section#faq .faq-group .row p {
-  font-size: 20px;
-  line-height: 34px;
-  color: #E5E5E5; }
+section#faq .faq-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px; }
+  section#faq .faq-group .row {
+    padding: 80px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px; }
+    section#faq .faq-group .row h4 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px; }
+    section#faq .faq-group .row p {
+      margin-top: 50px;
+      font-size: 20px;
+      line-height: 34px;
+      color: #E5E5E5; }
 
+@media only screen and (max-width: 1100px) {
+  section#faq .faq-group .row {
+    padding: 50px; }
+    section#faq .faq-group .row p {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 34px; } }
+@media only screen and (max-width: 400px) {
+  section#faq {
+    row-gap: 20px; }
+    section#faq .faq-group .row {
+      padding: 35px 20px 30px 20px; }
+      section#faq .faq-group .row h4 {
+        font-size: 12px;
+        line-height: 15px; }
+      section#faq .faq-group .row p {
+        margin-top: 15px;
+        font-size: 12px;
+        line-height: 20px; } }
 section#team-intro {
   display: flex;
   flex-direction: column;
