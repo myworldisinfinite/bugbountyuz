@@ -1,0 +1,16 @@
+section#faq {
+    .faq-group {
+        .row {
+            h4 {
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 34px;
+                color: $text-gray-darker;
+            }
+        }
+    }
+}
