@@ -56,6 +56,15 @@ header {
                 }
             }
         }
+
+        .menu-button {
+        
+            &:hover {
+                cursor: pointer;
+            }
+            
+            display: none;
+        }
     }
 }
 
@@ -135,6 +144,10 @@ header {
 
             div.header-btn {
                 display: none;
+            }
+
+            .menu-button {
+                display: block;
             }
         }
     }

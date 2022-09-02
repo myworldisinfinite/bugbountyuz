@@ -164,6 +164,10 @@ header {
           border-bottom: 2px solid;
           border-image-slice: 9;
           border-image: linear-gradient(270deg, rgba(0, 113, 218, 0), rgba(0, 113, 218, 0.510417)) 1; }
+    header div.header-group .menu-button {
+      display: none; }
+      header div.header-group .menu-button:hover {
+        cursor: pointer; }
 
 @media only screen and (max-width: 1200px) {
   header div.header-group nav.header-menu ul.nav-list li.nav-li:not(:last-child) {
@@ -202,7 +206,9 @@ header {
     header div.header-group nav.header-menu {
       display: none; }
     header div.header-group div.header-btn {
-      display: none; } }
+      display: none; }
+    header div.header-group .menu-button {
+      display: block; } }
 section#intro {
   background-image: url("../images/main-background.png");
   background-repeat: no-repeat;
