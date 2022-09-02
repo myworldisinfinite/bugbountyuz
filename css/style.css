@@ -503,12 +503,12 @@ section#faq .faq-group {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
-  position: relative; }
+  row-gap: 30px; }
   section#faq .faq-group .question {
     padding: 80px;
     border: 2px solid #FFFFFF;
-    border-radius: 5px; }
+    border-radius: 5px;
+    position: relative; }
     section#faq .faq-group .question h4 {
       font-weight: 700;
       font-size: 20px;
