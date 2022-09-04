@@ -1,3 +1,7 @@
+@import url("../fonts/Gilroy.css");
+@import url("../css/normalize.css");
+@import url("../css/reset.css");
+
 * {
   margin: 0;
   padding: 0;
