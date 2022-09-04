@@ -531,7 +531,7 @@ section#faq .faq-group {
       section#faq .faq-group .question.closed p {
         display: none; }
       section#faq .faq-group .question.closed .faq-toggle img {
-        transform: rotate(180deg); }
+        transform: rotate(0deg); }
     section#faq .faq-group .question .faq-toggle {
       position: absolute;
       top: 65px;
