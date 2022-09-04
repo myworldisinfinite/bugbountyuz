@@ -25,6 +25,12 @@ section#faq {
                 color: $text-gray-darker;
             }
 
+            .faq-toggle {
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+
             &.closed {
                 height: 160px;
                 display: flex;
@@ -33,6 +39,12 @@ section#faq {
                 p {
                     display: none;
                 }
+
+                .faq-toggle {
+                    img {
+                        transform: rotate(180deg);
+                    }
+                }
             }
 
             .faq-toggle {
@@ -40,6 +52,8 @@ section#faq {
                 top: 65px;
                 right: 60px;
             }
+
+            
 
         }
     }

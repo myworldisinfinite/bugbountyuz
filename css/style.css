@@ -522,12 +522,16 @@ section#faq .faq-group {
       font-size: 20px;
       line-height: 34px;
       color: #E5E5E5; }
+    section#faq .faq-group .question .faq-toggle img {
+      transform: rotate(180deg); }
     section#faq .faq-group .question.closed {
       height: 160px;
       display: flex;
       align-items: center; }
       section#faq .faq-group .question.closed p {
         display: none; }
+      section#faq .faq-group .question.closed .faq-toggle img {
+        transform: rotate(180deg); }
     section#faq .faq-group .question .faq-toggle {
       position: absolute;
       top: 65px;
