@@ -109,6 +109,10 @@ section#faq {
                         height: 24px;
                     }
                 }
+
+                &.closed {
+                    height: 80px;
+                }
             }
         }
     }
