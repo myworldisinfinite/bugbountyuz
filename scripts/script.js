@@ -18,9 +18,15 @@ let faqRows = document.querySelectorAll(".question");
 
 faqRows.forEach(faqRow => {
     faqRow.addEventListener("click", () => {
-        faqRow.classList.toggle('closed');
-        
+        faqRows.forEach(others => {
+            if (others.classList != 'closed') {
+                others.classList.add('closed');       
+            }
+        });
+
+        faqRow.classList.remove('closed');        
     })
+
 })
 
 
