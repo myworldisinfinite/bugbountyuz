@@ -563,7 +563,9 @@ section#faq .faq-group {
         right: 20px; }
         section#faq .faq-group .question .faq-toggle img {
           width: 24px;
-          height: 24px; } }
+          height: 24px; }
+      section#faq .faq-group .question.closed {
+        height: 80px; } }
 section#team-intro {
   display: flex;
   flex-direction: column;
