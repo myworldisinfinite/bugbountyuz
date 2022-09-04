@@ -23,6 +23,7 @@ faqRows.forEach(faqRow => {
 })
 
 /*
+// This version is possible
 let faqRows = document.querySelectorAll(".question");
 
 faqRows.forEach(faqRow => {
