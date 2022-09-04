@@ -28,6 +28,7 @@ section#faq {
             .faq-toggle {
                 img {
                     transform: rotate(180deg);
+                    transition: all 0.2s ease-in-out;
                 }
             }
 
@@ -97,8 +98,20 @@ section#faq {
                     font-size: 12px;
                     line-height: 20px;
                 }
+
+                .faq-toggle {
+                    position: absolute;
+                    top: 30px;
+                    right: 20px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
             }
         }
     }
     
 }
+

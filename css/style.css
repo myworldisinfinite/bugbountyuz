@@ -523,7 +523,8 @@ section#faq .faq-group {
       line-height: 34px;
       color: #E5E5E5; }
     section#faq .faq-group .question .faq-toggle img {
-      transform: rotate(180deg); }
+      transform: rotate(180deg);
+      transition: all 0.2s ease-in-out; }
     section#faq .faq-group .question.closed {
       height: 160px;
       display: flex;
@@ -555,7 +556,14 @@ section#faq .faq-group {
       section#faq .faq-group .question p {
         margin-top: 15px;
         font-size: 12px;
-        line-height: 20px; } }
+        line-height: 20px; }
+      section#faq .faq-group .question .faq-toggle {
+        position: absolute;
+        top: 30px;
+        right: 20px; }
+        section#faq .faq-group .question .faq-toggle img {
+          width: 24px;
+          height: 24px; } }
 section#team-intro {
   display: flex;
   flex-direction: column;
