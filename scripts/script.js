@@ -18,6 +18,15 @@ let faqRows = document.querySelectorAll(".question");
 
 faqRows.forEach(faqRow => {
     faqRow.addEventListener("click", () => {
+        faqRow.classList.toggle('closed');        
+    });
+})
+
+/*
+let faqRows = document.querySelectorAll(".question");
+
+faqRows.forEach(faqRow => {
+    faqRow.addEventListener("click", () => {
         faqRows.forEach(others => {
             if (others.classList != 'closed') {
                 others.classList.add('closed');       
@@ -28,6 +37,7 @@ faqRows.forEach(faqRow => {
     })
 
 })
+*/
 
 
 //  item.classList.toggle('active');
